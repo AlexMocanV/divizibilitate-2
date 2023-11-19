@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,nr=0,i,s=0,y,x;
+    cin>>n;
+    for(i=1;i*i<n;i++)
+    {
+        if(n%i==0)
+        {
+            x=i;
+            y=n/i;
+        }
+    }
+    if(i*i==n)
+    {
+        x=i;
+        y=i;
+    }
+    cout<<x<<" "<<y;
+
+    return 0;
+}
